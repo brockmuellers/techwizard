@@ -29,7 +29,7 @@
 }
 
 .search {
-	margin-top:50px;
+	margin-top:40px;
 }
 
 .search .searchbox {
@@ -69,6 +69,14 @@ border-radius: 15px;
 background-color:#DDDD88;
 }
 
+.boxydiv {
+margin-top:-30px;
+padding-top:30px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+background-color:#F8F8FF;
+}
+
 .donebtn {
 	width:100%;
 }
@@ -80,5 +88,4 @@ background-color:#DDDD88;
 }
 
 .tut-category{
-text-align: left;
 }
