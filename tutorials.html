@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Risque' rel='stylesheet' type='text/css'>
-		<title>TechWizard Homepage</title>
+		<title>TechWizard Tutorials</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="bootstrap/css/bootstrap.min.css" rel = "stylesheet" media="screen">
 		<link href="stylesheet.css" rel = "stylesheet" media="screen">
@@ -11,12 +11,83 @@
 	    <script src="js/index.js"></script>
 	    <script src="js/jquery.watermark.js"></script>
 	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	    <script type="text/javascript">
+			function toggleThings(tog) {
+				$(tog).toggle('fast')
+			}
+		</script>
 	</head>
 	<body>
 		
 		
 		<div class="container">
 			<div class="header">Tech Wizard</div>
+			<div><h3>What do you want to learn about?</h3></div>
+			<div class = "row">
+				<div class = "span7">
+					<div class="row"><div class="offset1 span6">
+						<button id = "category1" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category1-tutorials")'>Getting an account</button>
+					</div></div>
+					<div id="category1-tutorials" class = "togglable" hidden="true">
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">What type of email should I use?</button>
+						</div></div>
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Email addresses</button>
+						</div></div>
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Contacts</button>
+						</div></div>
+					</div>
+					<div class="row"><div class="offset1 span6">
+					<button id = "category2" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category2-tutorials")'>Sending emails</button>
+					</div></div>
+					<div id="category2-tutorials" class = "togglable" hidden="true">
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Writing a new email</button>
+						</div></div>
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Replying to an email</button>
+						</div></div>
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Forwarding an email</button>
+						</div></div>
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Using CC and BCC</button>
+						</div></div>
+					</div>
+					
+					<div class="row"><div class="offset1 span6">
+					<button id = "category3" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category3-tutorials")'>Adding & Downloading Attachments</button>
+					</div></div>
+					<div id="category3-tutorials" class = "togglable" hidden="true">
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Attaching Files</button>
+						</div></div>
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Viewing and Saving Attachments</button>
+						</div></div>
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Inline images</button>
+						</div></div>
+						<div class="row"><div class="offset2 span5">
+							<button class = "btn btn-info tutorial-category">Viruses</button>
+						</div></div>
+					</div>
+				</div>
+				<div class="span5">
+					<div class="row">
+						<div class="span4 offset1 sidebar">
+							<h4>Did you know?</h4>
+							Email was invented by Atilla the Hun.<br/>
+							Gmail is the most popular webmail client.<br/>
+							Hotmail.com used to be hotmale.com, but a pornographic
+							company sued them over the name.<br/>
+							2 out of 4 of these facts are true!
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
