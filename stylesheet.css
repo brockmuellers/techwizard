@@ -49,3 +49,14 @@ padding:10px;
 border-radius: 15px;
 background-color:#DDDD88;
 } 
+
+.related-tutorials {
+padding:10px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+background-color:#DDDD88;
+}
+
+.donebtn {
+	width:100%;
+}
