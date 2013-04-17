@@ -7,9 +7,9 @@
 		<link href="stylesheet.css" rel = "stylesheet" media="screen">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script src="bootstrap/js/bootstrap.min.js"></script>
-	    <script src="index.js"></script>
+	    <script src="js/index.js"></script>
+	    <script src="js/jquery.watermark.js"></script>
 	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-	    <link rel="stylesheet" href="jquery-ui/themes/base/jquery-ui.css" />
 	</head>
 	<body>
 		
@@ -18,18 +18,29 @@
 			<div class="header">Tech Wizard</div>
 			<div class = "row categories">
 				<div class="span4 offset2">
-					<button class="category">Internet</button>
+					<button class="category btn btn-primary">Internet</button>
 				</div>
 				<div class="span4">
-					<button class="category">Email</button>
+					<button class="category btn btn-primary">Email</button>
 				</div>
 			</div>
 			<div class = "row categories">
 				<div class="span4 offset2">
-					<button class="category">Photo Sharing</button>
+					<button class="category btn btn-primary">
+						<img src="img/Camera.png" class="camera-icon"/>Photo Sharing
+					</button>
 				</div>
 				<div class="span4">
-					<button class="category">Video Sharing</button>
+					<button class="category btn btn-primary">Video Sharing</button>
+				</div>
+			</div>
+			
+			<div class = "row search">
+				<div class = "span7 offset2">
+					<input class ="searchbox" type="text"></input>
+				</div>
+				<div class ="span1">
+					<button class="go btn">Go!</button>
 				</div>
 			</div>
 		</div>
