@@ -18,11 +18,10 @@ font-family: 'PT Sans';
 	padding-top:5px;
 	padding-bottom:5px;
 	margin-bottom:50px;
-	font-family:'Share Tech';
 }
 .navbar .navbar-inner {
 	background-image: none;
-	background-color: #F0F0FF;
+	background-color: #E4EDFF;
 	height: 70px;
 }
 
@@ -31,7 +30,10 @@ font-family: 'PT Sans';
 	padding-top:5px;
 	padding-bottom:5px;
 	margin-bottom:50px;
+	color: #1A3365;
 	font-size: 50px;
+	font-family:'Share Tech';
+	font-weight: bold;
 }
 
 .search {
@@ -63,26 +65,38 @@ font-family: 'PT Sans';
 }
 
 .sidebar {
-padding:10px;
--moz-border-radius: 15px;
-border-radius: 15px;
-background-color:#DDDD88;
+padding:20px;
+padding-top: 10px;
+background-color:#FFF6E4;
 } 
 
 .related-tutorials {
-padding:10px;
--moz-border-radius: 15px;
-border-radius: 15px;
-background-color:#DDDD88;
+padding:20px;
+padding-top: 10px;
+background-color:#FFF6E4;
 }
 
 .boxydiv {
 margin-top:-30px;
 padding-top:30px;
+padding-bottom:40px;
+/*background-color:#FAFAFA;*/
+}
+
+.bordered {
 -moz-border-radius: 15px;
 border-radius: 15px;
-background-color:#F8F8FF;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
+
 
 .donebtn {
 	width:100%;
@@ -94,5 +108,17 @@ background-color:#F8F8FF;
 	margin: -20px;
 }
 
+.btn-icon {
+	height: 30px;
+	
+}
+
 .tut-category{
+}
+
+.donebtn{
+	font-size: 15px;
+	padding: 13px 0px 13px 0px;
+	margin-top: 30px;
+	height: 55px;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href='http://fonts.googleapis.com/css?family=Risque' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
 		<title>TechWizard - Writing a new email</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +24,7 @@
 			<a class="brand" href="../index.html"><img src="../img/wizard.png" id="header-icon"/>TechWizard</a>
 			</div>
 			</div>
+			<div class = "boxydiv bordered">
 			<div class="row">
 				<div class="span12">
 					<div class="tutorial-title"><h2>Writing a New Email</h2></div>
@@ -31,15 +32,15 @@
 			</div>
 			<div class="row">
 				<div class="span2">
-					<i class="icon-chevron-left"></i><button class="btn btn-link">Previous</button>
+					<button class="btn btn-link"><i class="icon-chevron-left"></i>Previous</button>
 				</div>
 				<div class="span2 offset4">
-					<button class="btn btn-link">Next</button> <i class="icon-chevron-right"></i>
+					<button class="btn btn-link">Next <i class="icon-chevron-right"></i></button>
 				</div>
 			</div>
 			<hr/>
 			<div class = "row">
-				<div class = "span9">
+				<div class = "span8">
 					<div id = "tutorial-content">
 						So you've got email all set up and you want to send an email to your friend. 
 						Now what?<br/>
@@ -59,36 +60,38 @@
 					</div>
 					<div class = "done">
 						<div class="row">
-							<div class="span4">
-								<a href="../tutorials.html">
-								<button class="btn btn-primary donebtn">Back to the Tutorial List</button>
+							<div class="span3">
+								<a href="../index.html">
+								<button class="btn btn-success donebtn">Back to <img src="../img/wizard.png" class="btn-icon"/> 
+											<span style="font-family:'Share Tech';font-size:22px;font-weight:bold">TechWizard</span> Home</button>
 								</a>
 							</div>
-							<div class = "span4 offset1">
-								<a href="../index.html">
-								<button class="btn btn-primary donebtn">Back to TechWizard Home</button>
+							<div class = "span3 offset1">
+								<a href="../tutorials.html">
+								<button class="btn btn-primary donebtn">Back to <i class="icon-list icon-white"></i> 
+											<span style="font-weight:bold; font-size:120%;">Tutorial List</span></button>
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class = "span3">
-					<div class = "related-tutorials">
+					<div class = "related-tutorials bordered">
 						<center><h4>Prereqs</h4></center>
 						<a href="../tutorials.html">
-							<button class = "btn btn-success tutorial-category">Email addresses</button>
+							<button class = "btn btn-warning tutorial-category">Email addresses</button>
 						</a>
 						<a href="../tutorials.html">
-							<button class = "btn btn-success tutorial-category">Choosing a mail client</button>
+							<button class = "btn btn-warning tutorial-category">Choosing a mail client</button>
 						</a>
 						<center><h4>Related</h4></center>
 						<a href="../tutorials.html">
-							<button class = "btn btn-warning tutorial-category">Using cc and bcc</button>
+							<button class = "btn btn-success tutorial-category">Using cc and bcc</button>
 						</a>
 					</div>
 				</div>
 			</div>
-						
+			</div>		
 		</div>
 	</body>
 </html>
