@@ -6,7 +6,9 @@ font-family: 'PT Sans';
 
 .categories {
 	height: 150px;
+	margin-left: -50px;
 }
+
 
 .category {
 	width:100%;
@@ -38,6 +40,7 @@ font-family: 'PT Sans';
 
 .search {
 	margin-top:40px;
+	margin-left: -50px;
 }
 
 .search .searchbox {
@@ -62,15 +65,19 @@ font-family: 'PT Sans';
 	width:100%;
 	height: 200%;
 	margin-bottom:5px;
+	margin-top:10px;
+	height:40px;
 }
 
 .sidebar {
+margin:10px -10px 10px -50px;
 padding:20px;
 padding-top: 10px;
 background-color:#FFF6E4;
 } 
 
 .related-tutorials {
+margin:10px -10px 10px 0px;
 padding:20px;
 padding-top: 10px;
 background-color:#FFF6E4;
@@ -78,7 +85,8 @@ background-color:#FFF6E4;
 
 .boxydiv {
 margin-top:-30px;
-padding-top:30px;
+padding-left: 30px;
+padding-top:15px;
 padding-bottom:40px;
 /*background-color:#FAFAFA;*/
 }
