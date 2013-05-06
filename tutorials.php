@@ -56,7 +56,7 @@
 								while($tut = mysql_fetch_assoc($tutorials)) {
 							?>
 								<div class="row"><div class="offset1 span5">
-									<a href=<?="tutorials/".$tut['url'].".html";?>>
+									<a href=<?="tutorials/".$tut['url'].".php";?>>
 									<button class = "btn btn-info tutorial-category"><?=$tut['name'];?></button>
 									</a>
 								</div></div>

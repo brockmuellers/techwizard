@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+		<title>TechWizard - Writing a new email</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../bootstrap/css/bootstrap.min.css" rel = "stylesheet" media="screen">
+		<link href="../stylesheet.css" rel = "stylesheet" media="screen">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script src="../bootstrap/js/bootstrap.min.js"></script>
+	    <script src="js/index.js"></script>
+	    <script src="js/jquery.watermark.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+	</head>
+	<body>
+	<?PHP
+	$conn = mysql_connect('sql.mit.edu','jsharps','techwizardr0x') or die('Failed to connect db connection');
+			mysql_select_db('jsharps+techwizard', $conn);	
+
+    $id = 1;	
+    ?>	
+		
+		<div class="container">
+			<div class="navbar">
+			<div class="navbar-inner">
+			<!--icon from iconfinder.com, by IconEden-->
+			<a class="brand" href="../index.html"><img src="../img/wizard.png" id="header-icon"/>TechWizard</a>
+			</div>
+			</div>
+			<div class = "boxydiv bordered">
+			<div class="row">
+				<div class="span8">
+					<div class="tutorial-title"><h2>Writing a New Email</h2></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span2">
+					<button class="btn"><i class="icon-chevron-left"></i>Previous</button>
+				</div>
+				<div class="span2 offset4">
+					<button class="btn">Next <i class="icon-chevron-right"></i></button>
+				</div>
+			</div>
+			<hr style="width:67%;" />
+			<div class = "row">
+				<div class = "span8">
+					<div id = "tutorial-content">
+						So you've got email all set up and you want to send an email to your friend. 
+						Now what?<br/>
+						<p>
+						1. Find the button that creates a new message in your email client.  Typically,
+						 this button says "Compose" or "New email."  Here it is in gmail, outlook, and apple mail.</p><p>
+						2. Type the email address of the person you are sending it to in the "To:" field.  More in-depth 
+						instructions about using contacts to do it here.  For now, ignore the cc and bcc field.</p><p>
+						3. In the "Subject:" field, write a short (less than 1 sentence) topic sentence for your email. 
+						Something like "Thought of you today", "Information for tomorrow's meeting", or "Check out this cool 
+						article I read today" will do.</p><p>
+						4. Write your email, make it shiny, shiny pictures go here.
+						</p><p>
+						5. Press send! Your email will be delivered instantly.  But, don't be surprised if you don't get a reply. 
+						Some people don't check their email very often, and not every email is seen as needing acknowledgement.
+						</p>
+					</div>
+					<div class = "done">
+						<div class="row">
+							<div class="span4">
+								<a href="../index.html">
+								<button class="btn btn-success donebtn">Back to <img src="../img/wizard.png" class="btn-icon"/> 
+											<span style="font-family:'Share Tech';font-size:22px;font-weight:bold">TechWizard</span> Home</button>
+								</a>
+							</div>
+							<div class = "span4 offset0">
+								<a href="../tutorials.php">
+								<button class="btn btn-primary donebtn">Back to <i class="icon-list icon-white"></i> 
+											<span style="font-weight:bold; font-size:120%;">Tutorial List</span></button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php include_once('sidebar.php'); ?>
+			</div>
+			</div>		
+		</div>
+	</body>
+</html>
