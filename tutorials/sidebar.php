@@ -28,7 +28,7 @@ $prereqs = mysql_query($query);
 						<?php
 						while($prereq = mysql_fetch_assoc($prereqs)) {
 						?>
-						<a href=<?="'".$prereq['url']."php'";?>>
+						<a href=<?="'".$prereq['url'].".php'";?>>
 							<button class = "btn btn-warning tutorial-category"><?=$prereq['name'];?></button>
 						</a>
 						<?php
@@ -39,7 +39,7 @@ $prereqs = mysql_query($query);
 						<?php
 						while($relatedTut = mysql_fetch_assoc($related)) {
 						?>
-						<a href=<?="'".$relatedTut['url']."php'";?>>
+						<a href=<?="'".$relatedTut['url'].".php'";?>>
 							<button class = "btn btn-success tutorial-category"><?=$relatedTut['name'];?></button>
 						</a>
 						<?php } ?>
