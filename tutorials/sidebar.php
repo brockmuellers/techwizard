@@ -1,4 +1,6 @@
 <?php
+$conn = mysql_connect('sql.mit.edu','jsharps','techwizardr0x') or die('Failed to connect db connection');
+mysql_select_db('jsharps+techwizard', $conn);	
 
 $query = "SELECT * FROM tutorials WHERE tutorial_id=$id";
 $tutorial = mysql_query($query, $conn);

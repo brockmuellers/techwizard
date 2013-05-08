@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+		<?php include_once('tutorial_includes.html'); ?>
 		<title>TechWizard - Writing a new email</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="../bootstrap/css/bootstrap.min.css" rel = "stylesheet" media="screen">
-		<link href="../stylesheet.css" rel = "stylesheet" media="screen">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	    <script src="../bootstrap/js/bootstrap.min.js"></script>
-	    <script src="js/index.js"></script>
-	    <script src="js/jquery.watermark.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 
 	</head>
 	<body>
 	<?PHP
-	$conn = mysql_connect('sql.mit.edu','jsharps','techwizardr0x') or die('Failed to connect db connection');
-			mysql_select_db('jsharps+techwizard', $conn);	
-
-    $id = 1;	
+		$id = 1;	
     ?>	
 		
 		<div class="container">
-			<div class="navbar">
-			<div class="navbar-inner">
-			<!--icon from iconfinder.com, by IconEden-->
-			<a class="brand" href="../index.html"><img src="../img/wizard.png" id="header-icon"/>TechWizard</a>
-			</div>
-			</div>
+			<?php include_once('../header.html'); ?>
 			<div class = "boxydiv bordered">
 			<div class="row">
 				<div class="span8">
@@ -63,22 +46,7 @@
 						Some people don't check their email very often, and not every email is seen as needing acknowledgement.
 						</p>
 					</div>
-					<div class = "done">
-						<div class="row">
-							<div class="span4">
-								<a href="../index.html">
-								<button class="btn btn-success donebtn">Back to <img src="../img/wizard.png" class="btn-icon"/> 
-											<span style="font-family:'Share Tech';font-size:22px;font-weight:bold">TechWizard</span> Home</button>
-								</a>
-							</div>
-							<div class = "span4 offset0">
-								<a href="../tutorials.php">
-								<button class="btn btn-primary donebtn">Back to <i class="icon-list icon-white"></i> 
-											<span style="font-weight:bold; font-size:120%;">Tutorial List</span></button>
-								</a>
-							</div>
-						</div>
-					</div>
+					<?php include_once('footer.php'); ?>
 				</div>
 				<?php include_once('sidebar.php'); ?>
 			</div>
