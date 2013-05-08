@@ -1,0 +1,14 @@
+CC BCC:
+
+1. Every email needs an address to be sent to, but many clients
+   offer additional options, such as CC and BCC - Carbon Copy and
+   Blind Carbon Copy.
+   <cc_bcc_1>
+   
+2. These fields lets you send an email to multiple people at once, 
+   with the blind carbon copy allowing you to send the additional 
+   copies in secret. 
+   
+   That is, the recipients of a message will see any additional 
+   people listed under CC, but not under BCC.
+  
