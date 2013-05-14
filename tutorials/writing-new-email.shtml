@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+		 <!--#include virtual="tutorial_header.html" --> 
 		<title>TechWizard - Writing a new email</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="../bootstrap/css/bootstrap.min.css" rel = "stylesheet" media="screen">
-		<link href="../stylesheet.css" rel = "stylesheet" media="screen">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-	    <script src="../bootstrap/js/bootstrap.min.js"></script>
-	    <script src="js/index.js"></script>
-	    <script src="../js/slide_creator.js"></script>
-	    <script src="js/jquery.watermark.js"></script>
 
 
 	</head>
 	<body>
-		
 		
 		<div class="container">
 			<div class="navbar">
@@ -33,14 +22,7 @@
 					<br/>
 				</div>
 			</div>
-			<div class="row">
-				<div class="span2">
-					<button class="btn" onclick = 'previousSlide()'><i class="icon-chevron-left"></i>Previous</button>
-				</div>
-				<div class="span2 offset4">
-					<button class="btn" onclick = 'advanceSlide()'>Next <i class="icon-chevron-right"></i></button>
-				</div>
-			</div>
+			<!--#include virtual="tutorial_buttons.html" -->
 			<hr style="width:67%;" />
 			<div class = "row">
 				<div class = "span8">
@@ -73,6 +55,7 @@
 				
 						
 					</div>
+					<!--#include virtual="tutorial_buttons.html" -->
 					<div class = "done">
 						<div class="row">
 							<div class="span4">
