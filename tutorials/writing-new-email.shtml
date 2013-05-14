@@ -76,14 +76,14 @@
 				<div class = "span3">
 					<div class = "related-tutorials bordered">
 						<center><h4>Prereqs</h4></center>
-						<a href="addresses.html">
+						<a href="addresses.shtml">
 							<button class = "btn btn-warning tutorial-category">Email addresses</button>
 						</a>
-						<a href="clients.html">
+						<a href="clients.shtml">
 							<button class = "btn btn-warning tutorial-category">Choosing a mail client</button>
 						</a>
 						<center><h4>Related</h4></center>
-						<a href="ccbcc.html">
+						<a href="ccbcc.shtml">
 							<button class = "btn btn-success tutorial-category">Using cc and bcc</button>
 						</a>
 					</div>
