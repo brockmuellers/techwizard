@@ -34,7 +34,7 @@
    Blind Carbon Copy.
    <cc_bcc_1>
    </p><p>
-   <div id = "tut2" class="tutorial-slide">
+   </div><div id = "tut2" class="tutorial-slide">
 2. These fields lets you send an email to multiple people at once, 
    with the blind carbon copy allowing you to send the additional 
    copies in secret. 

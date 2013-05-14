@@ -10,6 +10,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script src="../bootstrap/js/bootstrap.min.js"></script>
 	    <script src="js/index.js"></script>
+		  <script src="../js/slide_creator.js"></script>
 	    <script src="js/jquery.watermark.js"></script>
 	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 
@@ -34,17 +35,17 @@
 			</div>
 			<div class="row">
 				<div class="span2">
-					<button class="btn" onclick = 'toggleThings("#tut1")'><i class="icon-chevron-left"></i>Previous</button>
+					<button class="btn" id="previousbtn" onclick = 'previousSlide()'><i class="icon-chevron-left"></i>Previous</button>
 				</div>
 				<div class="span2 offset4">
-					<button class="btn" onclick = 'toggleThings("#tut2")'>Next <i class="icon-chevron-right"></i></button>
+					<button class="btn" id="nextbtn" onclick = 'advanceSlide()'>Next <i class="icon-chevron-right"></i></button>
 				</div>
 			</div>
 			<hr style="width:67%;" />
 			<div class = "row">
 				<div class = "span8">
 					<div id = "tutorial-content">
-					<div id = "tut1">
+					<div id = "tut1" class="tutorial-slide">
 						
 						<p>
 						1. Every email needs an address to be sent to, but many clients
@@ -52,6 +53,7 @@
    Blind Carbon Copy.
    <cc_bcc_1>
    </p><p>
+   </div><div id = "tut2" class="tutorial-slide">
 2. These fields lets you send an email to multiple people at once, 
    with the blind carbon copy allowing you to send the additional 
    copies in secret. 

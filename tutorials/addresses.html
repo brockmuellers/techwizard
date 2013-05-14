@@ -10,6 +10,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script src="../bootstrap/js/bootstrap.min.js"></script>
 	    <script src="js/index.js"></script>
+		  <script src="../js/slide_creator.js"></script>
 	    <script src="js/jquery.watermark.js"></script>
 	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 
@@ -34,28 +35,30 @@
 			</div>
 			<div class="row">
 				<div class="span2">
-					<button class="btn" onclick = 'toggleThings("#tut1")'><i class="icon-chevron-left"></i>Previous</button>
+					<button class="btn" id="previousbtn" onclick = 'previousSlide()'><i class="icon-chevron-left"></i>Previous</button>
 				</div>
 				<div class="span2 offset4">
-					<button class="btn" onclick = 'toggleThings("#tut2")'>Next <i class="icon-chevron-right"></i></button>
+					<button class="btn" id="nextbtn" onclick = 'advanceSlide()'>Next <i class="icon-chevron-right"></i></button>
 				</div>
 			</div>
 			<hr style="width:67%;" />
 			<div class = "row">
 				<div class = "span8">
 					<div id = "tutorial-content">
-					<div id = "tut1">
+<div id = "tut1" class="tutorial-slide">
 					<p>
 1. An email address is similar to your home address, it lets 
    others communicate with you by sending messages to your 
    virtual/online address. </p>
 <p>
+</div><div id = "tut2" class="tutorial-slide">
 2. An email address consists of two parts, a person's chosen
    username and the website that manages their email.
    <br/><br/>
    They are formatted as username@website, and this is always
    the same.
    </p><p>
+   </div><div id = "tut3" class="tutorial-slide">
 3. The first part, the username, is free for you to choose, many people
    use their first or last names, initials, and birthdate in some 
    combination to try and create a unique identity. Others create usernames 
@@ -69,6 +72,7 @@
    Marco, just his first name (this is often already claimed!)<br/>
    Marco1998, his name with his birth year at the end, since 'Marco' was already in use.
    </p><p>
+   </div><div id = "tut4" class="tutorial-slide">
 4. The second part, the host name, is the name of the website that
    manages your email, acting as a digital version of the postal service
    that would deliver normal mail.

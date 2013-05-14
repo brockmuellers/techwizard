@@ -20,7 +20,9 @@ function advanceSlide() {
 	$(slide).show("slide", { direction: "right" }, 800);
 	//enable previous button and if at end, disable next button
 	document.getElementById("previousbtn").setAttribute("class", "btn");
+	if(current_slide == slide_count){
 	document.getElementById("nextbtn").setAttribute("class", "btn disabled");
+	}
 }
 
 function previousSlide() {
@@ -37,7 +39,9 @@ function previousSlide() {
 	//enable next button
 	//if at beginning, disable previous button
 	document.getElementById("nextbtn").setAttribute("class", "btn");
+	if(current_slide == 1){
 	document.getElementById("previousbtn").setAttribute("class", "btn disabled");
+	}
 }
 
 $(document).ready(function() {
