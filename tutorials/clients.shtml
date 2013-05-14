@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+		<title>TechWizard - Writing a new email</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../bootstrap/css/bootstrap.min.css" rel = "stylesheet" media="screen">
+		<link href="../stylesheet.css" rel = "stylesheet" media="screen">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script src="../bootstrap/js/bootstrap.min.js"></script>
+	    <script src="js/index.js"></script>
+	    <script src="js/jquery.watermark.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+
+	</head>
+	<body>
+		
+		
+		<div class="container">
+			<div class="navbar">
+			<div class="navbar-inner">
+			<!--icon from iconfinder.com, by IconEden-->
+			<a class="brand" href="../index.html"><img src="../img/wizard.png" id="header-icon"/>TechWizard</a>
+			</div>
+			</div>
+			<div class = "boxydiv bordered">
+			<div class="row">
+				<div class="span8">
+					<div class="tutorial-title"><h2>Choosing a mail client</h2></div>
+					<br/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span2">
+					<button class="btn" onclick = 'toggleThings("#tut1")'><i class="icon-chevron-left"></i>Previous</button>
+				</div>
+				<div class="span2 offset4">
+					<button class="btn" onclick = 'toggleThings("#tut2")'>Next <i class="icon-chevron-right"></i></button>
+				</div>
+			</div>
+			<hr style="width:67%;" />
+			<div class = "row">
+				<div class = "span8">
+					<div id = "tutorial-content">
+					<div id = "tut1">
+					<p>
+1.  An eMail client offers a way for you to send and recieve emails, 
+    and generally determines the secondary portion of your eMail address.
+    Different email clients offer different features, functionality, and 
+    aesthetics.
+	</p><p>
+
+2.  The most commonly used clients work right from your browser, just by
+    going to a different website. Others require a download, and end up 
+    having more, complex features.
+<br/>
+    The next few slides are website-based clients:
+    </p><p>
+3.  www.Gmail.com
+<br/>
+    <p><img src="clients1.png" width="400" height="300"></img></p>
+    </p><p>
+4.  www.YahooMail.com
+<br/>
+    <p><img src="clients2.png" width="400" height="300"></img></p>
+    </p><p>
+5.  www.Hotmail.com
+<br/>
+    <p><img src="clients3.png" width="400" height="300"></img></p>
+</p><p>
+6.   There are also downloadable clients, but they are much less common:<br/>
+        Apple Mail<br/>
+        Windows Outlook<br/>
+        Mozilla Thunderbird<br/>
+       <br/> 
+    It's very easy to jusy pick one of the web clients and follow their 
+    instructions to make an account and start sending emails!
+        </p>
+
+					</div>
+				
+						
+					</div>
+					<div class = "done">
+						<div class="row">
+							<div class="span4">
+								<a href="../index.html">
+								<button class="btn btn-success donebtn">Back to <img src="../img/wizard.png" class="btn-icon"/> 
+											<span style="font-family:'Share Tech';font-size:22px;font-weight:bold">TechWizard</span> Home</button>
+								</a>
+							</div>
+							<div class = "span4 offset0">
+								<a href="../lists.html">
+								<button class="btn btn-primary donebtn">Back to <i class="icon-list icon-white"></i> 
+											<span style="font-weight:bold; font-size:120%;">Tutorial List</span></button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "span3">
+					<div class = "related-tutorials bordered">
+						<center><h4>Prereqs</h4></center>
+						<a href="addresses.html">
+							<button class = "btn btn-warning tutorial-category">Email addresses</button>
+						</a>
+
+
+					</div>
+				</div>
+			</div>
+			</div>		
+		</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+		<title>TechWizard - Writing a new email</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../bootstrap/css/bootstrap.min.css" rel = "stylesheet" media="screen">
+		<link href="../stylesheet.css" rel = "stylesheet" media="screen">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script src="../bootstrap/js/bootstrap.min.js"></script>
+	    <script src="js/index.js"></script>
+	    <script src="js/jquery.watermark.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+
+	</head>
+	<body>
+		
+		
+		<div class="container">
+			<div class="navbar">
+			<div class="navbar-inner">
+			<!--icon from iconfinder.com, by IconEden-->
+			<a class="brand" href="../index.html"><img src="../img/wizard.png" id="header-icon"/>TechWizard</a>
+			</div>
+			</div>
+			<div class = "boxydiv bordered">
+			<div class="row">
+				<div class="span8">
+					<div class="tutorial-title"><h2>Email addresses explained</h2></div>
+					<br/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span2">
+					<button class="btn" onclick = 'toggleThings("#tut1")'><i class="icon-chevron-left"></i>Previous</button>
+				</div>
+				<div class="span2 offset4">
+					<button class="btn" onclick = 'toggleThings("#tut2")'>Next <i class="icon-chevron-right"></i></button>
+				</div>
+			</div>
+			<hr style="width:67%;" />
+			<div class = "row">
+				<div class = "span8">
+					<div id = "tutorial-content">
+					<div id = "tut1">
+					<p>
+1. An email address is similar to your home address, it lets 
+   others communicate with you by sending messages to your 
+   virtual/online address. </p>
+<p>
+2. An email address consists of two parts, a person's chosen
+   username and the website that manages their email.
+   <br/><br/>
+   They are formatted as username@website, and this is always
+   the same.
+   </p><p>
+3. The first part, the username, is free for you to choose, many people
+   use their first or last names, initials, and birthdate in some 
+   combination to try and create a unique identity. Others create usernames 
+   that remind them of things they like.
+   <br/><br/>
+   For example, a boy named Marco Farrugia created a couple of the 
+   following names:
+   <br/><br/>
+   Mfarrugi, his first initial and most of his last name.<br/>
+   A.F.Marco, his middle and last initial, followed by his first name.<br/>
+   Marco, just his first name (this is often already claimed!)<br/>
+   Marco1998, his name with his birth year at the end, since 'Marco' was already in use.
+   </p><p>
+4. The second part, the host name, is the name of the website that
+   manages your email, acting as a digital version of the postal service
+   that would deliver normal mail.
+   <br/><br/>
+   The host name comes from which website you decide to use to track
+   your emails, and the naming portion doesn't mean much beyond that. 
+   But the different services offer slightly different features, kind 
+   of like how USPS and Fedex aren't exactly the same.   
+   <br/><br/>
+   To continue the example, Marco's username Mfarrugi would look like:
+   <br/><br/>
+   Mfarrugi@gmail.com - Gmail is Google's web mail offering.
+   Mfarrugi@msn.com - Microsoft's web mail hosting.
+   Mfarrugi@mit.edu - MIT's mail hosting.
+   <br/><br/>
+   Each of the above examples is a valid email address, following the
+   username@website format.
+   </p>
+					</div>
+				
+						
+					</div>
+					<div class = "done">
+						<div class="row">
+							<div class="span4">
+								<a href="../index.html">
+								<button class="btn btn-success donebtn">Back to <img src="../img/wizard.png" class="btn-icon"/> 
+											<span style="font-family:'Share Tech';font-size:22px;font-weight:bold">TechWizard</span> Home</button>
+								</a>
+							</div>
+							<div class = "span4 offset0">
+								<a href="../lists.html">
+								<button class="btn btn-primary donebtn">Back to <i class="icon-list icon-white"></i> 
+											<span style="font-weight:bold; font-size:120%;">Tutorial List</span></button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "span3">
+					<div class = "related-tutorials bordered">
+						<center><h4>Prereqs</h4></center>
+
+						<a href="clients.html">
+							<button class = "btn btn-warning tutorial-category">Choosing a mail client</button>
+						</a>
+						<center><h4>Related</h4></center>
+						<a href="ccbcc.html">
+							<button class = "btn btn-success tutorial-category">Using cc and bcc</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			</div>		
+		</div>
+	</body>
+</html>

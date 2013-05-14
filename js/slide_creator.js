@@ -27,7 +27,7 @@ function previousSlide() {
 	current_slide --
 	var slide = "#tut" + current_slide
 	setTimeout(function(){
-	$(slide).show("slide", { direction: "left" }, 800);
+	$(slide).show("slide", { direction: "left" }, 500);
 	},450);
 }
 
