@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>TechWizard - Writing a new email</title>
+		<title>TechWizard - CC & BCC</title>
 		 <!--#include virtual="tutorial_header.html" --> 
 	</head>
 	<body>
@@ -26,7 +26,7 @@
 			<div class = "row">
 				<div class = "span8">
 					<div id = "tutorial-content">
-					<div id = "tut1">
+					<div id = "tut1" class="tutorial-slide">
 						
 						<p>
 						1. Every email needs an address to be sent to, but many clients
@@ -34,6 +34,7 @@
    Blind Carbon Copy.
    <cc_bcc_1>
    </p><p>
+   <div id = "tut2" class="tutorial-slide">
 2. These fields lets you send an email to multiple people at once, 
    with the blind carbon copy allowing you to send the additional 
    copies in secret. 
@@ -45,7 +46,7 @@
 				
 						
 					</div>
-					<!--#include virtual="tutorial_buttons.html" -->
+					
 					<div class = "done">
 						<div class="row">
 							<div class="span4">

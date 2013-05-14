@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>TechWizard - Writing a new email</title>
+		<title>TechWizard - Clients</title>
 		 <!--#include virtual="tutorial_header.html" --> 
 	</head>
 	<body>
@@ -26,13 +26,14 @@
 			<div class = "row">
 				<div class = "span8">
 					<div id = "tutorial-content">
-					<div id = "tut1">
+					<div id = "tut1" class="tutorial-slide">
 					<p>
 1.  An eMail client offers a way for you to send and recieve emails, 
     and generally determines the secondary portion of your eMail address.
     Different email clients offer different features, functionality, and 
     aesthetics.
 	</p><p>
+	<div id = "tut2" class="tutorial-slide">
 
 2.  The most commonly used clients work right from your browser, just by
     going to a different website. Others require a download, and end up 
@@ -40,18 +41,22 @@
 <br/>
     The next few slides are website-based clients:
     </p><p>
+	<div id = "tut3" class="tutorial-slide">
 3.  www.Gmail.com
 <br/>
     <p><img src="clients1.png" width="400" height="300"></img></p>
     </p><p>
+	<div id = "tut4" class="tutorial-slide">
 4.  www.YahooMail.com
 <br/>
     <p><img src="clients2.png" width="400" height="300"></img></p>
     </p><p>
+	<div id = "tut5" class="tutorial-slide">
 5.  www.Hotmail.com
 <br/>
     <p><img src="clients3.png" width="400" height="300"></img></p>
 </p><p>
+<div id = "tut6" class="tutorial-slide">
 6.   There are also downloadable clients, but they are much less common:<br/>
         Apple Mail<br/>
         Windows Outlook<br/>
@@ -65,7 +70,7 @@
 				
 						
 					</div>
-					<!--#include virtual="tutorial_buttons.html" -->
+					
 					<div class = "done">
 						<div class="row">
 							<div class="span4">
