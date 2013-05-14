@@ -4,6 +4,11 @@ font-family: 'PT Sans';
 }
 
 
+#tutorial-content{
+min-height: 100px;
+}
+
+
 .categories {
 	height: 150px;
 	margin-left: -50px;
