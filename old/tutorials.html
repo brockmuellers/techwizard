@@ -14,11 +14,8 @@
 	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 	    <script type="text/javascript">
 			function toggleThings(tog) {
-				if ($(tog).is(":hidden")) {
-					$(".subcat").hide("fast");
-					$(tog).toggle('fast');	}
-				else { $(".subcat").hide("fast"); }
-				}
+				$(tog).toggle('fast')
+			}
 		</script>
 	</head>
 	<body>
@@ -38,10 +35,10 @@
 					<div class="row"><div class="offset1 span6">
 						<button id = "category1" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category1-tutorials")'>Getting an account</button>
 					</div></div>
-					<div id="category1-tutorials" class = "togglable subcat" hidden="true">
+					<div id="category1-tutorials" class = "togglable" hidden="true">
 						<div class="row"><div class="offset2 span5">
 							<a href="tutorials/writing-new-email.html">
-							<button class = "btn btn-info tutorial-category">Getting started with email</button>
+							<button class = "btn btn-info tutorial-category">What type of email should I use?</button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset2 span5">
@@ -58,7 +55,7 @@
 					<div class="row"><div class="offset1 span6">
 					<button id = "category2" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category2-tutorials")'>Sending emails</button>
 					</div></div>
-					<div id="category2-tutorials" class = "togglable subcat" hidden="true">
+					<div id="category2-tutorials" class = "togglable" hidden="true">
 						<div class="row"><div class="offset2 span5">
 							<a href="tutorials/writing-new-email.html">
 							<button class = "btn btn-info tutorial-category">Writing a new email</button>
@@ -84,7 +81,7 @@
 					<div class="row"><div class="offset1 span6">
 					<button id = "category3" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category3-tutorials")'>Adding & Downloading Attachments</button>
 					</div></div>
-					<div id="category3-tutorials" class = "togglable subcat" hidden="true">
+					<div id="category3-tutorials" class = "togglable" hidden="true">
 						<div class="row"><div class="offset2 span5">
 							<a href="tutorials/writing-new-email.html">
 							<button class = "btn btn-info tutorial-category">Attaching Files</button>
@@ -106,29 +103,6 @@
 							</a>
 						</div></div>
 					</div>
-					
-					<div class="row"><div class="offset1 span6">
-					<button id = "category3" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category3-tutorials")'>Using Facebook</button>
-					</div></div>
-					<div id="category3-tutorials" class = "togglable subcat" hidden="true">
-						<div class="row"><div class="offset2 span5">
-							<a href="tutorials/writing-new-email.html">
-							<button class = "btn btn-info tutorial-category">Getting started with Facebook</button>
-							</a>
-						</div></div>
-						<div class="row"><div class="offset2 span5">
-							<a href="tutorials/writing-new-email.html">
-							<button class = "btn btn-info tutorial-category">Finding your friends</button>
-							</a>
-						</div></div>
-						<div class="row"><div class="offset2 span5">
-							<a href="tutorials/writing-new-email.html">
-							<button class = "btn btn-info tutorial-category">Sending messages</button>
-							</a>
-						</div></div>
-					</div>
-					
-					
 					<br/>
 					<div class="span4">
 					<a href="index.html">

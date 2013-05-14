@@ -19,7 +19,70 @@
 					$(tog).toggle('fast');	}
 				else { $(".subcat").hide("fast"); }
 				}
+				
+				
+
+			
+			//get category var passed in url
+			function getUrlVars() {
+				var vars = {};
+				var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+					vars[key] = value;
+				});
+				return vars;
+			}
+			//var cat = getUrlVars()["cat"];
+			var cat = "cat2";
+
+			
+
+			
+			//create the giant html mess for the tutorial list
+			$.getJSON('content/database.json', function(data) {
+				var hugehtml = [];
+				var val = data[cat];
+				$.each(val, function(subkey,subval){
+					info = val[subkey];
+					//0 etc
+					//alert(subkey);
+					//objects
+					//alert(info);
+					//alert(info.tutorialid);
+					//alert(info.subcatname);
+					hugehtml.push('<h2>'+info.subcatname+'</h2>');
+					smallhtml = [];
+					$.each(info.tutnames, function(tutkey,tutval){
+						
+						//tutorial id
+						//alert(tutkey);
+						//get started
+						//alert(tutval);
+						smallhtml.push('<div>'+tutval+'<div>');
+					})
+					joinedhtml = smallhtml.join("");
+					//alert(joinedhtml);
+					hugehtml.push(joinedhtml);
+				})
+				//alert(hugehtml.join(""));
+				finalhtml = hugehtml.join("");
+				
+				document.getElementById('category123').innerHTML = finalhtml;
+			
+				
+				
+				
+				});
+
+			
+			
+			
 		</script>
+		
+		
+		
+		
+		
+		
 	</head>
 	<body>
 		
@@ -36,22 +99,18 @@
 			<div class = "row">
 				<div class = "span7">
 					<div class="row"><div class="offset1 span6">
-						<button id = "category1" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category1-tutorials")'>Getting an account</button>
-					</div></div>
-					<div id="category1-tutorials" class = "togglable subcat" hidden="true">
-						<div class="row"><div class="offset2 span5">
-							<a href="tutorials/writing-new-email.html">
-							<button class = "btn btn-info tutorial-category">Getting started with email</button>
-							</a>
+							<button id = "category1" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category1-tutorials")'>Getting started with email</button>
+							
 						</div></div>
+						<div id="category1-tutorials" class = "togglable subcat" hidden="true">
 						<div class="row"><div class="offset2 span5">
-							<a href="tutorials/writing-new-email.html">
+							<a href="tutorials/addresses.html">
 							<button class = "btn btn-info tutorial-category">Email addresses</button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset2 span5">
-							<a href="tutorials/writing-new-email.html">
-							<button class = "btn btn-info tutorial-category">Contacts</button>
+							<a href="tutorials/clients.html">
+							<button class = "btn btn-info tutorial-category">Choosing a mail client</button>
 							</a>
 						</div></div>
 					</div>
@@ -75,7 +134,7 @@
 							</a>
 						</div></div>
 						<div class="row"><div class="offset2 span5">
-							<a href="tutorials/writing-new-email.html">
+							<a href="tutorials/ccbcc.html">
 							<button class = "btn btn-info tutorial-category">Using CC and BCC</button>
 							</a>
 						</div></div>
@@ -127,8 +186,6 @@
 							</a>
 						</div></div>
 					</div>
-					
-					
 					<br/>
 					<div class="span4">
 					<a href="index.html">
@@ -147,6 +204,10 @@
 							Hotmail.com used to be hotmale.com, but a pornographic
 							company sued them over the name.<br/>
 							2 out of 4 of these facts are true!
+							
+							<br/>
+							
+							
 						</div>
 						</div>
 					</div>
