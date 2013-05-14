@@ -12,5 +12,5 @@
 											<span style="font-weight:bold; font-size:120%;">Tutorial List</span></button>
 								</a>
 							</div>
-						</div>
-					</div>
+	</div>
+</div>
