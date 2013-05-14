@@ -14,10 +14,12 @@ function advanceSlide() {
 		return;
 	}
 	var slide = "#tut" + current_slide
-	$(slide).hide("slide", { direction: "left" });
+	//$(slide).hide("slide", { direction: "left" });
+	$(slide).hide();
 	current_slide ++
 	var slide = "#tut" + current_slide
-	$(slide).show("slide", { direction: "right" }, 800);
+	//$(slide).show("slide", { direction: "right" }, 800);
+	$(slide).show();
 	//enable previous button and if at end, disable next button
 	document.getElementById("previousbtn").setAttribute("class", "btn");
 	if(current_slide == slide_count){
@@ -30,12 +32,14 @@ function previousSlide() {
 		return;
 	}
 	var slide = "#tut" + current_slide
-	$(slide).hide("slide", { direction: "right" }, 500);
+	//$(slide).hide("slide", { direction: "right" }, 500);
+	$(slide).hide();
 	current_slide --
 	var slide = "#tut" + current_slide
-	setTimeout(function(){
-	$(slide).show("slide", { direction: "left" }, 500);
-	},450);
+	//setTimeout(function(){
+	//$(slide).show("slide", { direction: "left" }, 500);
+	//},450);
+	$(slide).show()
 	//enable next button
 	//if at beginning, disable previous button
 	document.getElementById("nextbtn").setAttribute("class", "btn");
