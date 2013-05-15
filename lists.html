@@ -22,7 +22,20 @@
 				
 				
 
+		
 			
+			/*
+			//create the giant html mess for the tutorial list
+
+
+			*/
+			
+			
+		</script>
+		
+		<script>
+		$(document).ready(function() {
+		
 			//get category var passed in url
 			function getUrlVars() {
 				var vars = {};
@@ -31,54 +44,86 @@
 				});
 				return vars;
 			}
-			//var cat = getUrlVars()["cat"];
-			var cat = "cat2";
-
+			var cat = getUrlVars()["cat"];
+			//var cat = "cat2";
 			
-
 			
-			//create the giant html mess for the tutorial list
-			$.getJSON('content/database.json', function(data) {
+		
+		
+		
+			//iterate through all of the outer categories
+				//check if there's something from the database to put in it, else remove
+			//same for inner categories
+			$.getJSON('content/database'+cat+'.json', function(data) {
+			
+			//
+			
 				var hugehtml = [];
+				
 				var val = data[cat];
+				
+				
+				largeiter = 1;
 				$.each(val, function(subkey,subval){
+
+
 					info = val[subkey];
 					//0 etc
-					//alert(subkey);
 					//objects
 					//alert(info);
 					//alert(info.tutorialid);
 					//alert(info.subcatname);
-					hugehtml.push('<h2>'+info.subcatname+'</h2>');
+					hugehtml.push(info.subcatname);
 					smallhtml = [];
+					smalliter = 1;
+					
+					largepushid = "category"+largeiter.toString();
+					document.getElementById(largepushid).innerHTML = info.subcatname;
+
 					$.each(info.tutnames, function(tutkey,tutval){
 						
-						//tutorial id
-						//alert(tutkey);
-						//get started
-						//alert(tutval);
-						smallhtml.push('<div>'+tutval+'<div>');
+						smallpushid = "tut"+largeiter.toString()+smalliter.toString();
+						document.getElementById(smallpushid).innerHTML = tutval;						
+						document.getElementById("a11").setAttribute("href", "tutorials/"+tutkey+".shtml");						
+						smalliter = smalliter+1;
 					})
-					joinedhtml = smallhtml.join("");
-					//alert(joinedhtml);
-					hugehtml.push(joinedhtml);
+					
+					//get rid of empty tutorials
+					alltutorials = ["tut"+largeiter.toString()+"1", "tut"+largeiter.toString()+"2", "tut"+largeiter.toString()+"3", "tut"+largeiter.toString()+"4"];
+					$.each(alltutorials, function(index, value) {
+						if (document.getElementById(value).innerHTML == ""){
+							element = document.getElementById(value);
+							element.parentNode.removeChild(element);
+						}
+					})
+					
+					
+					largeiter = largeiter+1;
+					
+					
+					
+				});
+				
+				
+				//get rid of empty tutorial categories
+				categories = ["category1", "category2", "category3", "category4"];
+				$.each(categories, function(index, value) {
+					if (document.getElementById(value).innerHTML == ""){
+						element = document.getElementById(value);
+						element.parentNode.removeChild(element);
+					}
 				})
+				
 				//alert(hugehtml.join(""));
-				finalhtml = hugehtml.join("");
-				
-				document.getElementById('category123').innerHTML = finalhtml;
-			
-				
-				
+				//finalhtml = hugehtml.join("");
+				//alert(finalhtml);
+				//document.getElementById('category123').innerHTML = finalhtml;	
 				
 				});
-
-			
-			
-			
+		
+		
+		});
 		</script>
-		
-		
 		
 		
 		
@@ -99,90 +144,105 @@
 			<div class = "row">
 				<div class = "span7">
 					<div class="row"><div class="offset1 span6">
-							<button id = "category1" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category1-tutorials")'>Getting started with email</button>
+							<button id = "category1" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category1-tutorials")'></button>
 							
 						</div></div>
 						<div id="category1-tutorials" class = "togglable subcat" hidden="true">
 						<div class="row"><div class="offset1 span5">
-							<a href="tutorials/addresses.shtml">
-							<button class = "btn btn-info tutorial-category">Email addresses</button>
+							<a id = "a11" href="tutorial/addresses.shtml">
+							<button class = "btn btn-info tutorial-category" id = "tut11"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/clients.shtml">
-							<button class = "btn btn-info tutorial-category">Choosing a mail client</button>
+							<button class = "btn btn-info tutorial-category" id = "tut12"></button>
+							</a>
+						</div></div>
+						<div class="row"><div class="offset1 span5">
+							<a href="tutorials/clients.shtml">
+							<button class = "btn btn-info tutorial-category" id = "tut13"></button>
+							</a>
+						</div></div>
+						<div class="row"><div class="offset1 span5">
+							<a href="tutorials/clients.shtml">
+							<button class = "btn btn-info tutorial-category" id = "tut14"></button>
 							</a>
 						</div></div>
 					</div>
 					<div class="row"><div class="offset1 span6">
-					<button id = "category2" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category2-tutorials")'>Sending emails</button>
+					<button id = "category2" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category2-tutorials")'></button>
 					</div></div>
 					<div id="category2-tutorials" class = "togglable subcat" hidden="true">
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Writing a new email</button>
+							<button class = "btn btn-info tutorial-category" id = "tut21"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Replying to an email</button>
+							<button class = "btn btn-info tutorial-category" id = "tut22"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Forwarding an email</button>
+							<button class = "btn btn-info tutorial-category" id = "tut23"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/ccbcc.shtml">
-							<button class = "btn btn-info tutorial-category">Using CC and BCC</button>
+							<button class = "btn btn-info tutorial-category" id = "tut24"></button>
 							</a>
 						</div></div>
 					</div>
 					
 					<div class="row"><div class="offset1 span6">
-					<button id = "category3" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category3-tutorials")'>Adding & Downloading Attachments</button>
+					<button id = "category3" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category3-tutorials")'></button>
 					</div></div>
 					<div id="category3-tutorials" class = "togglable subcat" hidden="true">
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Attaching Files</button>
+							<button class = "btn btn-info tutorial-category" id = "tut31"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Viewing and Saving Attachments</button>
+							<button class = "btn btn-info tutorial-category" id = "tut32"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Inline images</button>
+							<button class = "btn btn-info tutorial-category" id = "tut33"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Viruses</button>
+							<button class = "btn btn-info tutorial-category" id = "tut34"></button>
 							</a>
 						</div></div>
 					</div>
 					
 					<div class="row"><div class="offset1 span6">
-					<button id = "category4" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category4-tutorials")'>Using Facebook</button>
+					<button id = "category4" class = "btn btn-primary tutorial-category" onclick = 'toggleThings("#category4-tutorials")'></button>
 					</div></div>
 					<div id="category4-tutorials" class = "togglable subcat" hidden="true">
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Getting started with Facebook</button>
+							<button class = "btn btn-info tutorial-category" id = "tut41"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Finding your friends</button>
+							<button class = "btn btn-info tutorial-category" id = "tut42"></button>
 							</a>
 						</div></div>
 						<div class="row"><div class="offset1 span5">
 							<a href="tutorials/writing-new-email.shtml">
-							<button class = "btn btn-info tutorial-category">Sending messages</button>
+							<button class = "btn btn-info tutorial-category" id = "tut43"></button>
+							</a>
+						</div></div>
+						<div class="row"><div class="offset1 span5">
+							<a href="tutorials/writing-new-email.shtml">
+							<button class = "btn btn-info tutorial-category" id = "tut44"></button>
 							</a>
 						</div></div>
 					</div>

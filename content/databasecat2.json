@@ -17,7 +17,7 @@
 		"tutorialid": "sending",
 		"subcatname": "Sending emails",
 		"tutnames": {
-			"writing": "Writing a new email",
+			"writing-new-email": "Writing a new email",
 			"clients": "Replying to an email",
 			"addresses": "Forwarding an email",
 			"ccbcc": "Using CC and BCC"
@@ -28,7 +28,7 @@
 		"tutorialid": "attach",
 		"subcatname": "Adding & Downloading Attachments",
 		"tutnames": {
-			"writing": "Attaching files",
+			"writing-new-email": "Attaching files",
 			"clients": "Viruses",
 			"addresses": "Contacts"
 		}
