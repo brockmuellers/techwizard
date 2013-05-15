@@ -4,43 +4,33 @@
 "cat3": [
 
 	{
-		"tutorialid": "getstarted",
-		"subcatname": "Getting started with email",
+		"tutorialid": "photos",
+		"subcatname": "Photos",
 		"tutnames": {
-			"clients": "What type of email should I choose?",
-			"addresses": "Email addresses",
-			"ccbcc": "Contacts"
+			"clients": "Connecting your digital camera",
+			"addresses": "Viewing photos",
+			"ccbcc": "Sharing your photos"
 		}	
 	},
 	
 	{
-		"tutorialid": "sending",
-		"subcatname": "Sending emails",
+		"tutorialid": "video",
+		"subcatname": "Videos",
 		"tutnames": {
-			"writing-new-email": "Writing a new email",
-			"clients": "Replying to an email",
-			"addresses": "Forwarding an email",
-			"ccbcc": "Using CC and BCC"
+			"writing-new-email": "Connecting your video camera",
+			"clients": "Viewing videos on your computer",
+			"addresses": "Programs to make home videos",
+			"ccbcc": "Using YouTube"
 		}	
 	},
 	
 	{
-		"tutorialid": "attach",
-		"subcatname": "Adding & Downloading Attachments",
+		"tutorialid": "music",
+		"subcatname": "Music",
 		"tutnames": {
-			"writing-new-email": "Attaching files",
-			"clients": "Viruses",
-			"addresses": "Contacts"
-		}
-	},
-	
-	{
-		"tutorialid": "facebook",
-		"subcatname": "Using Facebook",
-		"tutnames": {
-			"ccbcc": "Getting started",
-			"clients": "Finding your friends",
-			"addresses": "Writing messages"
+			"writing-new-email": "iTunes",
+			"clients": "Music online",
+			"addresses": "Other ways to play music"
 		}
 	}
 		

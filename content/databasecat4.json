@@ -4,43 +4,29 @@
 "cat4": [
 
 	{
-		"tutorialid": "getstarted",
-		"subcatname": "Getting started with email",
+		"tutorialid": "word",
+		"subcatname": "Using digital documents",
 		"tutnames": {
-			"clients": "What type of email should I choose?",
-			"addresses": "Email addresses",
-			"ccbcc": "Contacts"
+			"clients": "Making documents with Microsoft Word",
+			"addresses": "How to open and save documents"
 		}	
 	},
 	
 	{
-		"tutorialid": "sending",
-		"subcatname": "Sending emails",
+		"tutorialid": "finance",
+		"subcatname": "Finance",
 		"tutnames": {
-			"writing-new-email": "Writing a new email",
-			"clients": "Replying to an email",
-			"addresses": "Forwarding an email",
-			"ccbcc": "Using CC and BCC"
+			"writing-new-email": "Making spreadsheets",
+			"clients": "Programs to help you manage your finances",
+			"addresses": "Doing taxes on your computer"
 		}	
 	},
 	
 	{
-		"tutorialid": "attach",
-		"subcatname": "Adding & Downloading Attachments",
+		"tutorialid": "request",
+		"subcatname": "Want to learn about something else?",
 		"tutnames": {
-			"writing-new-email": "Attaching files",
-			"clients": "Viruses",
-			"addresses": "Contacts"
-		}
-	},
-	
-	{
-		"tutorialid": "facebook",
-		"subcatname": "Using Facebook",
-		"tutnames": {
-			"ccbcc": "Getting started",
-			"clients": "Finding your friends",
-			"addresses": "Writing messages"
+			"writing-new-email": "Request a new topic here!"
 		}
 	}
 		

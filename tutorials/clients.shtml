@@ -80,7 +80,7 @@
 								</a>
 							</div>
 							<div class = "span4 offset0">
-								<a href="../lists.html">
+								<a href="javascript:history.back()">
 								<button class="btn btn-primary donebtn">Back to <i class="icon-list icon-white"></i> 
 											<span style="font-weight:bold; font-size:120%;">Tutorial List</span></button>
 								</a>
